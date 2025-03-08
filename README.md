@@ -1,1 +1,11 @@
-# credit-risk-classification
+# Credit Risk Classification
+
+![image](https://github.com/user-attachments/assets/cc734647-0a5c-45e4-a0dd-93efcaf70c09)
+
+This project focuses on developing a machine learning model to predict the creditworthiness of borrowers using historical lending activity data from a peer-to-peer lending platform. The primary goal of this analysis is to classify loans as either healthy (label 0) or high-risk (label 1), providing financial organizations with a reliable tool for assessing loan risk. The dataset includes various financial indicators as features and a target variable, loan_status, indicating the loan's risk status. The majority of loans in the dataset are healthy, with 75,036 entries, compared to 2,500 high-risk loans, highlighting a class imbalance.
+
+The machine learning process begins by loading the data into a Pandas DataFrame and separating it into features (X) and labels (y). The data is then split into training and testing sets using train_test_split, reserving 20% of the data for testing. A logistic regression model is chosen for its efficiency and effectiveness in binary classification tasks. The model is trained on the training data (X_train and y_train) and evaluated on the testing data (X_test and y_test). Key performance metrics, including accuracy, precision, recall, and F1-score, are calculated to assess the model's performance.
+
+The model achieves an accuracy of 99%, with near-perfect precision and recall for healthy loans (class 0) and strong performance for high-risk loans (class 1). Specifically, the model demonstrates a recall of 94% for high-risk loans, meaning it successfully identifies most high-risk cases, and a precision of 86%, indicating some room for improvement in reducing false positives for this class. Despite the dataset's imbalance, the model performs well overall and is suitable for deployment, especially in scenarios where identifying high-risk loans accurately is a priority.
+
+This project showcases the use of logistic regression for credit risk classification and offers actionable insights for financial decision-making. Future enhancements could include addressing the class imbalance using techniques like oversampling or exploring other algorithms to further improve the model's precision for high-risk loans. The findings demonstrate the potential of machine learning in supporting data-driven lending practices.
